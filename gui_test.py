@@ -10,7 +10,7 @@ def change_text_size(slider_value):
     my_size.set(slider_value)
 
 windowSize = 600
-app = App(title="Hello World", height=windowSize, width=windowSize)
+app = App(title="My Hello World", height=windowSize, width=windowSize)
 
 welcome_message = Text(app, text="Welcome to my app", size=10, font="Times New Roman", color="#0000ff")
 my_name = TextBox(app, width=30, text=welcome_message.get())
