@@ -1,4 +1,4 @@
-from guizero import App,Text,TextBox,PushButton
+from guizero import App, Text, TextBox, PushButton
 
 def say_my_name():
     currentText = my_name.get()
@@ -8,7 +8,7 @@ def say_my_name():
     new_size = int(my_size.get())
     welcome_message.font_size(new_size)
     
-app = App(title="Hello world", height=400, width=400)
+app = App(title="Hello World", height=400, width=400)
 
 welcome_message = Text(app, text="Welcome to my app", size=20, font="Times New Roman", color="#0000ff")
 my_name = TextBox(app, width=30)
