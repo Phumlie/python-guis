@@ -1,4 +1,4 @@
-from guizero import App, Text, TextBox, PushButton, Slider
+from guizero import App, Text, TextBox, PushButton, Slider, Picture
 
 def say_my_name():
     welcome_message.set( my_name.get() )
@@ -18,7 +18,8 @@ my_color = TextBox(app, width=30, text="red")
 my_size = TextBox(app, width=30, text="30")
 update_text = PushButton(app, command=say_my_name, text="Display my name")
 text_size = Slider(app, command=change_text_size, start=10, end=52)
- 
+my_pikachu = Picture(app, image="pikachu.gif")
+
 app.display()
 
 print("Bye bye!!!")
